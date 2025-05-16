@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #fffbd1;
+  color: #00003a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00003a;
+  font-size: 14px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #00003a;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-section {
+  max-width: 500px;
+}
+
+.text-section h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.text-section .location {
+  margin-bottom: 20px;
+  color: #00003a;
+}
+
+button {
+  background-color: #f7e96d;
+  border: 1px solid #cbbf57;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.image-section {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.circle-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.circle-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.circle-outline {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* Decorative Elements */
+.decorative {
+  position: absolute;
+  font-weight: bold;
+  color: #3e3e1c;
+  font-size: 20px;
+}
+
+.slashes {
+  bottom: 10px;
+  left: -30px;
+  transform: rotate(-15deg);
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.plus-signs {
+  top: -10px;
+  right: -10px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.plus-signs::after {
+  content: '+\A+\A+';
+  white-space: pre;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 18px;
+  color: #00003a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #6a6a6a;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Add this line */
+  gap: 10px;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+
+.static-text {
+  white-space: nowrap;
+}
+
+.dynamic-text {
+  display: inline-block;
+  position: relative;
+  min-width: 240px; /* Adjust based on your longest word */
+  height: auto;
+}
+
+.word {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+.word.active {
+  opacity: 1;
+  position: relative;
+  position: relative;
+}
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #00003a;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #333366;
+}
+.resume-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #8686df, #5c5cc4);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.resume-download:hover {
+  background: linear-gradient(135deg, #1a1a5e, #00003a);
+  transform: scale(1.05);
+  color: #e0e0e0;
+}
+
+
+.social-icons a:hover .fa-linkedin-in { color: #0A66C2; }
+.social-icons a:hover .fa-threads { color: #0057ff; }
+.social-icons a:hover .fa-x { color: #a5b9e0; }
+.social-icons a:hover .fa-instagram { color: #d731b0; }
+.social-icons a:hover .fa-twitter { color: #1DA1F2; }
+.social-icons a:hover .fa-github { color: #725d5d; }
+.social-icons a:hover .fa-whatsapp { color: #25D366; }
+.social-icons a:hover .fa-envelope { color: #D44638; } /* Gmail red */
+.social-icons a:hover .fa-phone-alt {color: rgb(232, 116, 39);}
+.social-icons a:hover .fa-facebook { color: #0458ff; }
+
+
+
